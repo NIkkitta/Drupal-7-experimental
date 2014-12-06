@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Article type feature.
+ */
+
+include_once 'article_type.features.inc';

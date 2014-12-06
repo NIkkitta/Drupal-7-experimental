@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Private type feature.
+ */
+
+include_once 'private_type.features.inc';

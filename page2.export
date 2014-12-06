@@ -1,0 +1,409 @@
+array(
+  (object) array(
+      'vid' => '97',
+      'uid' => '1',
+      'title' => 'Sub Private 2',
+      'log' => 'Edited by admin.',
+      'status' => '0',
+      'comment' => '2',
+      'promote' => '1',
+      'sticky' => '0',
+      'vuuid' => '0cb7418e-241b-4a58-812e-a43786d520a0',
+      'nid' => '388',
+      'type' => 'article',
+      'language' => 'und',
+      'created' => '1417879864',
+      'changed' => '1417879864',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => 'f4202729-2d89-4c96-8dac-0d2f55539b2b',
+      'revision_timestamp' => '1417879864',
+      'revision_uid' => '1',
+      'body' => array(),
+      'field_image' => array(),
+      'og_group_ref' => array(
+        'und' => array(
+          array(
+            'target_id' => '369',
+          ),
+        ),
+      ),
+      'field_ct_referenced' => array(
+        'und' => array(
+          array(
+            'target_id' => '374',
+          ),
+        ),
+      ),
+      'field_field_collector' => array(
+        'und' => array(
+          array(
+            'value' => '17',
+            'revision_id' => '47',
+          ),
+          array(
+            'value' => '18',
+            'revision_id' => '48',
+          ),
+        ),
+      ),
+      'rdf_mapping' => array(
+        'field_image' => array(
+          'predicates' => array(
+            'og:image',
+            'rdfs:seeAlso',
+          ),
+          'type' => 'rel',
+        ),
+        'field_tags' => array(
+          'predicates' => array(
+            'dc:subject',
+          ),
+          'type' => 'rel',
+        ),
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1417879864',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'name' => 'admin',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => array(
+        'pid' => '44',
+        'source' => 'node/388',
+        'alias' => 'sub_private_2_new',
+        'language' => 'und',
+      ),
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+      'workbench_moderation_state_current' => 'needs_review',
+      'workbench_moderation_state_new' => 'needs_review',
+      'field_collection_deploy' => array(
+        'field_field_collector' => array(
+          array(
+            'item_id' => '17',
+            'revision_id' => '47',
+            'field_name' => 'field_field_collector',
+            'default_revision' => '1',
+            'archived' => '0',
+            'uuid' => 'a9310659-1c57-40fa-92e0-926f0f5f152e',
+            'field_field_collector_title' => array(
+              'und' => array(
+                array(
+                  'value' => 'collector 1',
+                  'format' => NULL,
+                  'safe_value' => 'collector 1',
+                ),
+              ),
+            ),
+            'rdf_mapping' => array(),
+            'entity_view_prepared' => TRUE,
+          ),
+          array(
+            'item_id' => '18',
+            'revision_id' => '48',
+            'field_name' => 'field_field_collector',
+            'default_revision' => '1',
+            'archived' => '0',
+            'uuid' => 'c29c309e-76ea-4319-a1a4-b6cbd293e6c1',
+            'field_field_collector_title' => array(
+              'und' => array(
+                array(
+                  'value' => 'collector 2',
+                  'format' => NULL,
+                  'safe_value' => 'collector 2',
+                ),
+              ),
+            ),
+            'rdf_mapping' => array(),
+            'entity_view_prepared' => TRUE,
+          ),
+        ),
+      ),
+      'node_export_dependency' => array(
+        array(
+          'type' => 'node',
+          'id' => '369',
+          'delta' => 0,
+          'property' => 'target_id',
+          'module' => 'entityreference',
+          'field_name' => 'og_group_ref',
+          'langcode' => 'und',
+          'uuid' => 'a6174fc0-de40-4271-b100-00daedb4705c',
+        ),
+        array(
+          'type' => 'node',
+          'id' => '374',
+          'delta' => 0,
+          'property' => 'target_id',
+          'module' => 'entityreference',
+          'field_name' => 'field_ct_referenced',
+          'langcode' => 'und',
+          'uuid' => '37531ee0-015a-464d-a932-f5efcf788742',
+        ),
+        array(
+          'type' => 'field_collection_item',
+          'id' => '17',
+          'delta' => 0,
+          'property' => 'value',
+          'module' => 'field_collection',
+          'field_name' => 'field_field_collector',
+          'langcode' => 'und',
+          'uuid' => 'a9310659-1c57-40fa-92e0-926f0f5f152e',
+        ),
+        array(
+          'type' => 'field_collection_item',
+          'id' => '18',
+          'delta' => 1,
+          'property' => 'value',
+          'module' => 'field_collection',
+          'field_name' => 'field_field_collector',
+          'langcode' => 'und',
+          'uuid' => 'c29c309e-76ea-4319-a1a4-b6cbd293e6c1',
+        ),
+      ),
+    ),
+  (object) array(
+      'vid' => '95',
+      'uid' => '1',
+      'title' => 'Private2',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '1',
+      'sticky' => '0',
+      'vuuid' => 'a7c164b4-d38e-4bc5-9861-feeec93d06ef',
+      'nid' => '369',
+      'type' => 'private',
+      'language' => 'und',
+      'created' => '1417879864',
+      'changed' => '1417879864',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => 'a6174fc0-de40-4271-b100-00daedb4705c',
+      'revision_timestamp' => '1417879864',
+      'revision_uid' => '1',
+      'group_group' => array(
+        'und' => array(
+          array(
+            'value' => '1',
+          ),
+        ),
+      ),
+      'body' => array(),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1417769176',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'name' => 'admin',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => array(
+        'pid' => '6',
+        'source' => 'node/369',
+        'alias' => 'private',
+        'language' => 'und',
+      ),
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+  (object) array(
+      'vid' => '96',
+      'uid' => '1',
+      'title' => 'CT referenced 1',
+      'log' => '',
+      'status' => '1',
+      'comment' => '2',
+      'promote' => '1',
+      'sticky' => '0',
+      'vuuid' => '54cf6980-4221-46e2-a2ec-da8b5c3e8c46',
+      'nid' => '374',
+      'type' => 'ct_referenced',
+      'language' => 'und',
+      'created' => '1417879864',
+      'changed' => '1417879864',
+      'tnid' => '0',
+      'translate' => '0',
+      'uuid' => '37531ee0-015a-464d-a932-f5efcf788742',
+      'revision_timestamp' => '1417879864',
+      'revision_uid' => '1',
+      'body' => array(),
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          'sioc:Item',
+          'foaf:Document',
+        ),
+        'title' => array(
+          'predicates' => array(
+            'dc:title',
+          ),
+        ),
+        'created' => array(
+          'predicates' => array(
+            'dc:date',
+            'dc:created',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'changed' => array(
+          'predicates' => array(
+            'dc:modified',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+        'body' => array(
+          'predicates' => array(
+            'content:encoded',
+          ),
+        ),
+        'uid' => array(
+          'predicates' => array(
+            'sioc:has_creator',
+          ),
+          'type' => 'rel',
+        ),
+        'name' => array(
+          'predicates' => array(
+            'foaf:name',
+          ),
+        ),
+        'comment_count' => array(
+          'predicates' => array(
+            'sioc:num_replies',
+          ),
+          'datatype' => 'xsd:integer',
+        ),
+        'last_activity' => array(
+          'predicates' => array(
+            'sioc:last_activity_date',
+          ),
+          'datatype' => 'xsd:dateTime',
+          'callback' => 'date_iso8601',
+        ),
+      ),
+      'cid' => '0',
+      'last_comment_timestamp' => '1417787872',
+      'last_comment_name' => NULL,
+      'last_comment_uid' => '1',
+      'comment_count' => '0',
+      'name' => 'admin',
+      'picture' => '0',
+      'data' => 'b:0;',
+      'path' => FALSE,
+      'menu' => NULL,
+      'node_export_drupal_version' => '7',
+    ),
+)

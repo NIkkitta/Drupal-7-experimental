@@ -1,0 +1,14 @@
+name = OG menu private
+core = 7.x
+package = Features
+dependencies[] = features
+dependencies[] = menu
+dependencies[] = uuid
+dependencies[] = uuid_features_menu
+features[features_api][] = api:2
+features[menu_custom][] = menu-og-369
+features[menu_uuid_links][] = 1d45e7ad-0be2-4ff9-8b89-9341b99aa75c
+features[menu_uuid_links][] = 99c1c641-3dcf-4650-b17e-2eb297d6665e
+features[menu_uuid_links][] = d8a590f7-7c85-11e4-877f-080027d53c2e
+mtime = 1417787514
+project path = sites/all/modules/custom

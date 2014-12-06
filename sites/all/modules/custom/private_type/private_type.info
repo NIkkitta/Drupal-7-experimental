@@ -1,0 +1,16 @@
+name = Private type
+core = 7.x
+package = Features
+dependencies[] = features
+dependencies[] = list
+dependencies[] = og_ui
+dependencies[] = options
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = body
+features[field_base][] = group_group
+features[field_instance][] = node-private-body
+features[field_instance][] = node-private-group_group
+features[node][] = private
+mtime = 1417788465
+project path = sites/all/modules/custom
