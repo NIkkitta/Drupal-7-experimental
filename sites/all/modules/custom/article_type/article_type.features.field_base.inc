@@ -33,6 +33,7 @@ function article_type_field_default_field_bases() {
     'locked' => 0,
     'module' => 'entityreference',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
@@ -48,6 +49,8 @@ function article_type_field_default_field_bases() {
         ),
       ),
       'target_type' => 'node',
+      'views_base_columns' => array(),
+      'views_base_table' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'entityreference',
@@ -69,8 +72,11 @@ function article_type_field_default_field_bases() {
     'locked' => 0,
     'module' => 'field_collection',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'hide_blank_items' => 1,
       'path' => '',
+      'views_base_columns' => array(),
+      'views_base_table' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'field_collection',
@@ -99,7 +105,10 @@ function article_type_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max_length' => 255,
+      'views_base_columns' => array(),
+      'views_base_table' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'text',
@@ -129,10 +138,73 @@ function article_type_field_default_field_bases() {
     'module' => 'image',
     'settings' => array(
       'default_image' => FALSE,
+      'entity_translation_sync' => array(
+        0 => 'fid',
+      ),
       'uri_scheme' => 'public',
+      'views_base_columns' => array(),
+      'views_base_table' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'image',
+  );
+
+  // Exported field_base: 'field_sub_collection'
+  $field_bases['field_sub_collection'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_sub_collection',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'revision_id' => array(
+        0 => 'revision_id',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'field_collection',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'hide_blank_items' => 1,
+      'path' => '',
+      'views_base_columns' => array(),
+      'views_base_table' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'field_collection',
+  );
+
+  // Exported field_base: 'field_sub_title_collection'
+  $field_bases['field_sub_title_collection'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_sub_title_collection',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'max_length' => 255,
+      'views_base_columns' => array(),
+      'views_base_table' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
   );
 
   return $field_bases;

@@ -30,6 +30,80 @@ function article_type_field_default_field_instances() {
     'label' => 'Field Collector title',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_field_collector-field_sub_collection'
+  $field_instances['field_collection_item-field_field_collector-field_sub_collection'] = array(
+    'bundle' => 'field_field_collector',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'field_collection',
+        'settings' => array(
+          'add' => 'Add',
+          'delete' => 'Delete',
+          'description' => TRUE,
+          'edit' => 'Edit',
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_view',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_sub_collection',
+    'label' => 'Sub collection',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'field_collection',
+      'settings' => array(),
+      'type' => 'field_collection_embed',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_sub_collection-field_sub_title_collection'
+  $field_instances['field_collection_item-field_sub_collection-field_sub_title_collection'] = array(
+    'bundle' => 'field_sub_collection',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_sub_title_collection',
+    'label' => 'Sub title collection',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -74,6 +148,7 @@ function article_type_field_default_field_instances() {
     'required' => FALSE,
     'settings' => array(
       'display_summary' => TRUE,
+      'entity_translation_sync' => FALSE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -116,6 +191,7 @@ function article_type_field_default_field_instances() {
     'label' => 'CT referenced',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -159,6 +235,7 @@ function article_type_field_default_field_instances() {
     'label' => 'Field collector',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -204,6 +281,7 @@ function article_type_field_default_field_instances() {
     'settings' => array(
       'alt_field' => TRUE,
       'default_image' => 0,
+      'entity_translation_sync' => FALSE,
       'file_directory' => 'field/image',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -260,6 +338,7 @@ function article_type_field_default_field_instances() {
           'status' => TRUE,
         ),
       ),
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'view modes' => array(
@@ -290,6 +369,8 @@ function article_type_field_default_field_instances() {
   t('Field collector');
   t('Groups audience');
   t('Image');
+  t('Sub collection');
+  t('Sub title collection');
   t('Upload an image to go with this article.');
 
   return $field_instances;

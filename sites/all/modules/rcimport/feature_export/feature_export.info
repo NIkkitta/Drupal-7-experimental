@@ -1,0 +1,14 @@
+name = Feature Export
+core = 7.x
+package = Features
+dependencies[] = features
+dependencies[] = file
+dependencies[] = image
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = field_simpl_image
+features[field_instance][] = node-export-body
+features[field_instance][] = node-export-field_simpl_image
+features[node][] = export
+features_exclude[field_base][body] = body
+mtime = 1419541925
