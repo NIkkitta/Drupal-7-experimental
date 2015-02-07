@@ -1,0 +1,54 @@
+<?php
+
+
+
+function pluto_restapi_menu() {
+    $items = array();
+
+    $items['pluto/restapi/%'] = array(
+        'title' => 'Pluto REST API',
+        'description' => 'Pluto REST API',
+        'page callback' => '_pluto_restapi_json',
+        'page arguments' => array(2),
+        'access arguments' => array('access'),
+        'type' => MENU_NORMAL_ITEM,
+    );
+    $items['pluto/restapi'] = array(
+        'title' => 'Pluto REST API',
+        'description' => 'Pluto REST API',
+        'page callback' => '_pluto_restapi_call',
+        'page arguments' => array(),
+        'access arguments' => array('access'),
+        'type' => MENU_NORMAL_ITEM,
+    );
+
+    return $items;
+}
+
+function _pluto_restapi_call() {
+    global $base_url;
+ drupal_add_js('var base_url="'.$base_url.'"', 'inline');
+    $out = '<div><input id="nodeid" type="text"></div></div><div id="load">[load]</div>';
+    return $out;
+}
+
+function _pluto_restapi_json($nid) {
+    if (is_numeric($nid)) {
+        $node = node_load($nid);
+        /* dpm($node,'$node');
+          $encoded =  json_encode($node);
+          $node_Up = json_decode($encoded);
+          dpm($node_Up,'$node_Up');
+          return ''; */
+        $rest = new stdClass();
+        $rest->nid = $node->nid;
+        $rest->title = $node->title;
+        $rest->created = $node->created;
+        drupal_json_output($rest);
+        /* echo json_encode($node);
+          exit(0); */
+        // drupal_json_output($node);
+    } else {
+        return 'Wrong parameter';
+    }
+}

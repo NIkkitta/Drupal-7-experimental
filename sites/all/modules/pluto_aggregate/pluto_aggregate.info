@@ -1,0 +1,6 @@
+name = Pluto CSS aggregation
+description = "Allowes to merge your css files into one big file."
+core = 7.x
+package = "PLUTO"
+version = "7.x-1.0"
+core = "7.x"
